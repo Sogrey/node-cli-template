@@ -8,6 +8,10 @@
   },
   "author": "Sogrey",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sogrey/node-cli.git"
+  },
   "bin": {
     "kid": "index.js"
   },
@@ -15,5 +19,9 @@
     "commander": "^2.20.0",
     "inquirer": "^6.3.1",
     "shelljs": "^0.8.3"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/Sogrey/node-cli/issues"
+  },
+  "homepage": "https://github.com/Sogrey/node-cli#readme"
 }
