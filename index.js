@@ -17,8 +17,8 @@ const initAction = () => {
         console.log('项目名为：', answers.name)
         console.log('正在拷贝项目，请稍等')
         
-        const remote = 'https://github.com/PanJiaChen/vue-admin-template.git'
-        const curName = 'vue-admin-template'
+        const remote = 'git@github.com:Sogrey/TypeScript-SDK-Template.git'
+        const curName = 'tsdk'
         const tarName = answers.name
 
         shell.exec(`

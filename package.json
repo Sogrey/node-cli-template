@@ -1,16 +1,17 @@
 {
-  "name": "test-cli",
-  "version": "1.0.0",
+  "name": "node-cli-template",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Sogrey",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Sogrey/node-cli.git"
+    "url": "git+https://github.com/Sogrey/node-cli-template.git"
   },
   "bin": {
     "kid": "index.js"
@@ -18,10 +19,11 @@
   "dependencies": {
     "commander": "^2.20.0",
     "inquirer": "^6.3.1",
+    "ora": "^6.0.0",
     "shelljs": "^0.8.3"
   },
   "bugs": {
-    "url": "https://github.com/Sogrey/node-cli/issues"
+    "url": "https://github.com/Sogrey/node-cli-template/issues"
   },
-  "homepage": "https://github.com/Sogrey/node-cli#readme"
+  "homepage": "https://github.com/Sogrey/node-cli-template#readme"
 }
