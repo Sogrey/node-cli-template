@@ -103,3 +103,26 @@ fs.rename(sourceFile, destPath, function (err) {
     console.log('stats: ' + JSON.stringify(stats));
   });
 });
+
+
+
+// 按字节分段读文件
+var fs = require('fs');
+var filename = 'test.txt'
+
+var fd = fs.openSync(filename, 'r');
+var bufferSize = 1024;
+var buffer = new Buffer(bufferSize);
+
+var leftOver = '';
+var read, line, idxStart, idx;
+while ((read = fs.readSync(fd, buffer, 0, bufferSize, null)) !== 0) {
+  leftOver += buffer.toString('utf8', 0, read);
+  idxStart = 0
+  while ((idx = leftOver.indexOf("\n", idxStart)) !== -1) {
+    line = leftOver.substring(idxStart, idx);
+    console.log("one line read: " + line);
+    idxStart = idx + 1;
+  }
+  leftOver = leftOver.substring(idxStart);
+}
