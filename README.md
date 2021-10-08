@@ -2,6 +2,8 @@
 node 命令行工具
 
 
+[![Open in Visual Studio Code](https://open.vscode.dev/badges/open-in-vscode.svg)](https://open.vscode.dev/Sogrey/node-cli-template)
+
 nodejs开发cli脚手架
 
 
