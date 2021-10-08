@@ -29,6 +29,9 @@
     "progress": "^2.0.3",
     "shelljs": "^0.8.3"
   },
+  "devDependencies": {
+    "ansi-regex": ">=5.0.1"
+  },
   "bugs": {
     "url": "https://github.com/Sogrey/node-cli-template/issues"
   },
